@@ -1,12 +1,14 @@
 import { Location } from './Location';
 import faker from 'faker';
 
-export class User {
+export class Company {
   name: string;
+  catchPhrase: string;
   location: Location;
 
   constructor() {
-    this.name = `${faker.name.firstName()} ${faker.name.lastName()}`;
+    this.name = faker.company.companyName();
+    this.catchPhrase = faker.company.catchPhrase();
     this.location = new Location();
   }
 }

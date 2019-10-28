@@ -1,4 +1,11 @@
-const title: Element = document.createElement('h1');
-title.textContent = 'Hello!';
+import { User } from './User';
+import { Company } from './Company';
 
-document.body.appendChild(title);
+const user: Element = document.createElement('pre');
+user.textContent = JSON.stringify(new User(), undefined, ' ');
+
+const company: Element = document.createElement('pre');
+company.textContent = JSON.stringify(new Company(), undefined, ' ');
+
+document.body.appendChild(user);
+document.body.appendChild(company);

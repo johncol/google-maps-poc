@@ -1,6 +1,11 @@
-interface Location {
+import faker from 'faker';
+
+export class Location {
   latitude: number;
   longitude: number;
-}
 
-export default Location;
+  constructor() {
+    this.latitude = Number.parseFloat(faker.address.latitude());
+    this.longitude = Number.parseFloat(faker.address.longitude());
+  }
+}
