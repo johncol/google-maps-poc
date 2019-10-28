@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "parcel index.html"
+  },
   "devDependencies": {
     "@types/faker": "^4.1.6",
     "typescript": "^3.6.4"
