@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Maps with Typescript</title>
+    <style>
+      #map {
+        width: 80vw;
+        height: 80vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
+    <div id="map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5B2K4b3dA44Fx8nJ_8TY2_gIXytz_QlA"></script>
     <script src="src/index.ts"></script>
   </body>
